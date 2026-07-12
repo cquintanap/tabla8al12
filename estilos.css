@@ -1,0 +1,68 @@
+body{
+
+    font-family:Arial;
+    text-align:center;
+    background:#f4f4f4;
+
+}
+
+#tablero{
+
+    width:1100px;
+    height:500px;
+
+    display:grid;
+
+    grid-template-columns:repeat(11,100px);
+    grid-template-rows:repeat(5,100px);
+
+    background-image:url("imagen.jpg");
+    background-size:1100px 500px;
+
+}
+
+.casilla{
+
+    border:1px solid black;
+
+    background:#ffffff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+input{
+
+    width:50px;
+    text-align:center;
+
+}
+
+.correcto{
+
+    background:transparent;
+    border:none;
+
+}
+
+.correcto input,
+.correcto button,
+.correcto span{
+
+    display:none;
+
+}
+
+#mensaje{
+
+    font-size:30px;
+    color:green;
+    margin-top:30px;
+
+}
